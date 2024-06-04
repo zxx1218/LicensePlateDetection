@@ -23,14 +23,7 @@
 <hr>
 
 
-## :rocket: 算法获取
-
-- GitHub链接：[GitHub链接](https://github.com/zxx1218/LP_detection)
-- Gitee连接：[Gitee](https://gitee.com/zxx1218/LP_detection-gitee)
-
-PS：如果通过Github访问项目，请不要通过“加速通道”访问，因为加速通道中的项目版本比较老
-
-### 运行要求
+## :rocket: 运行要求
 
 - 运行算法与Web前端需要 Python >= 3.8
 - 运行GUI界面需要下载QT编译器 5.14.2 版本
