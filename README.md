@@ -6,7 +6,7 @@
 
 ## :sparkles: Demo
 
-<img src="./image/result.jpg" width="1000px">
+<img src="./image/result.jpg" width="700px">
 
 <hr>
 
@@ -20,7 +20,7 @@ PS1：在线体验地址集成了图片识别和视频检测，点击页面下�
 PS2：在线体验链接中部署的模型作者只用了少量数据进行了简单的训练，如果需要更高精度以及更好的性能，自行部署项目后可以使用更全面的数据集进行训练
 ☝
 
-<img src="./image/gradio1.png" width="800px">
+<img src="./image/gradio1.png" width="1000px">
 
 <hr>
 
@@ -32,6 +32,20 @@ PS2：在线体验链接中部署的模型作者只用了少量数据进行了�
 &emsp;&emsp;模型设计部分，车辆检测网络采用了改良的**YOLOv7**模型进行检测（改进方法是加入了注意力机制以及改良了原模型中的GSConv_slimneck卷积），而车牌检测网络则自行设计了一种**ResNet与Transformr**相结合的网络，该模型输出检测边框的仿射变换矩阵，可识别任意角度的车牌文字。训练数据集使用CCPD2019、2020以及部分自生成数据集。
 
 &emsp;&emsp;在训练检测模型时，使用了数据增强方法以增强模型的泛化能力。对于车牌号码的序列识别，使用程序生成的车牌图片进行训练，并结合适当的图像增强手段。模型训练采用端到端的方式，输入图片后直接输出车牌号码序列，并将车牌号码打印在原始图片上。
+
+## 自构建数据集
+&emsp;&emsp;由于所能获取的车牌文字数据集量少且质量较差，本课题通过自动生成多样化车牌用于补充数据训练模型，如下图所示，本课题使用程序构建了不同颜色的车牌底板用于模拟国内五种车牌底色。
+
+<img src="./image/chepai.png" width="500px">
+
+&emsp;&emsp;同时，如下图所示，本课题还使用程序构建了不同省份的车牌文字信息，用于模拟车牌内容文字。
+
+<img src="./image/chepaiwenzi.png" width="500px">
+
+&emsp;&emsp;最终，如下图所示，通过程序，本课题构建了大量的车牌信息数据集用于文字识别训练，丰富了训练数据的多样性，显著提升模型对各类复杂真实场景的适应性。
+
+<img src="./image/hecheng.png" width="500px">
+
 <hr>
 
 ## :rocket: 运行要求
@@ -60,15 +74,7 @@ pip install -r requirements.txt
 
 使用模型检测单张图片：
 
-<img src="./image/2.jpg" width="600px">
-
-<img src="./image/6.jpg" width="600px">
-
-<img src="./image/7.jpg" width="600px">
-
-<img src="./image/8.jpg" width="600px">
-
-<img src="./image/9.jpg" width="600px">
+<img src="./image/2.jpg" width="400px"> <img src="./image/6.jpg" width="400px"> <img src="./image/7.png" width="400px"> <img src="./image/8.jpg" width="400px"> <img src="./image/9.jpg" width="400px">
 
 <hr>
 
