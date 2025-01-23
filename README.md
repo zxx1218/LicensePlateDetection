@@ -6,7 +6,7 @@
 
 ## :sparkles: Demo
 
-<img src="./image/result.jpg" width="700px">
+<img src="./image/result.jpg">
 
 <hr>
 
