@@ -13,7 +13,7 @@
 ## :sparkles: 车牌识别Web端在线体验连接
 
 👇
- **Web端在线体验地址：**:white_check_mark:[访问这里进行车牌识别在线体验](http://zxxserver.e3.luyouxia.net:14485):white_check_mark:
+ **Web端在线体验地址：**:white_check_mark:[访问这里进行车牌识别在线体验](http://zxxserver.e3.luyouxia.net:10765):white_check_mark:
 
 PS1：在线体验地址集成了图片识别和视频检测，点击页面下方页面选项即可分别体验！在网页下方提供了若干输入样例，点击样例自动填充到相应位置后即可点击开始修复查看效果。
 
